@@ -1,0 +1,154 @@
+main{
+
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.199),rgba(236, 236, 236, 0.979));
+    background-repeat: no-repeat;
+    margin: 50px 25px 50px 25px;
+    border: 1px solid black;
+    padding: 50px;
+    border-radius: 40px;
+    font-family: sans-serif;
+}
+h1{
+    color: rgb(17, 131, 17);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 25px;
+    padding: 30px;
+}
+section{
+    display: inline-block;
+    width: 300px;
+    height: 120px;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 28px;
+    background: radial-gradient(at center, rgb(179, 197, 236), rgb(214, 220, 235) );
+}
+#bordaac{
+    border-top-left-radius: 30px;
+}
+#bordaap{
+    border-top-right-radius: 30px;
+}
+#bordasp{
+    border-bottom-left-radius: 30px;
+}
+#bordato{
+    border-bottom-right-radius: 30px;
+}
+.txt{
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    color: black;
+    text-align: left;
+    line-height: 4px;
+    font-size: 12px;
+}
+h3{
+    font-size: 11px;
+}
+h2{
+    display: inline-block;
+    border: 1px solid black;
+    background: radial-gradient(at center, rgb(255, 255, 255), rgb(164, 164, 233));
+    text-align: center;
+    padding: 8px;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+.img{
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid black;
+    width: 90px;
+    height: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: content-box;
+    margin-right: 15px;
+}
+#ac{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Cal%C3%A7ad%C3%A3o_da_Gameleira%2C_Rio_Branco_Acre_1.jpg/1024px-Cal%C3%A7ad%C3%A3o_da_Gameleira%2C_Rio_Branco_Acre_1.jpg);
+}
+#al{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/fe/Panorama_de_Macei%C3%B3.jpg);
+}
+#ap{
+    background-image: url(https://viagemeturismo.abril.com.br/wp-content/uploads/2016/12/macapa06-bg1.jpg?quality=70&strip=info&resize=680,453);
+    }
+#am{
+    background-image: url(https://i.em.com.br/8gLqAziJUVBh6m-KUOB__loVGbw=/820x0/smart/imgsapp.em.com.br/app/noticia_127983242361/2022/02/06/1342939/teatro-em-manaus_1_62562.jpg);
+}
+#ba{
+    background-image: url(https://passaportefeliz.com.br/wp-content/uploads/2021/03/salvador-02-1024x575.jpg);
+}
+#ce{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Fortaleza%2C_Brazil_%284%29.jpg/197px-Fortaleza%2C_Brazil_%284%29.jpg);
+}
+#df{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Catedral_Metropolitana_de_Brasilia.jpg/800px-Catedral_Metropolitana_de_Brasilia.jpg);
+}
+#es{
+    background-image: url(https://www.passagenspromo.com.br/blog/wp-content/uploads/2019/03/praias-de-vitoria-espirito-santo-740x415.jpg);
+}
+#go{
+    background-image: url(https://sagresonline.com.br/wp-content/uploads/2021/03/goiania-pca-civica.jpeg);
+}
+#ma{
+    background-image: url(https://motamachado.com.br/wp-content/uploads/2021/08/25-08-Blog-Capa.png);
+    }
+#mt{
+    background-image: url(https://odocumento.com.br/wp-content/uploads/2020/02/a-a-107-300x147.jpg);
+}
+#ms{
+    background-image: url(https://ovigilantems.com.br/assets/uploads/blog/2020-09-10/7569339c16c7a1b6fe2c7a8d1f30d46a.jpeg);
+}
+#mg{
+    background-image: url(https://blogmeudestino.com/wp-content/uploads/2016/07/igreja-sao-francisco-de-assis-pampulha-belo-horizonte-mg-2.jpg);
+}
+#pa{
+    background-image: url(https://s204818.gridserver.com/wp-content/uploads/2015/03/belem-para-blog.png);
+}
+#pb{
+    background-image: url(https://www.abcdacomunicacao.com.br/wp-content/uploads/pixba-Joao-Pessoa.jpeg);
+}
+#pr{
+    background-image: url(https://itapemirim.com.br/wp-content/uploads/2019/12/curitiba.png);
+}
+#pe{
+    background-image: url(https://viagemeturismo.abril.com.br/wp-content/uploads/2016/10/rua-do-centro-velho-de-recife-pernambuco.jpeg?quality=70&strip=info&w=920?quality=70&strip=info&w=636);
+}
+#pi{
+    background-image: url(https://dsdsuzy1jtjfw.cloudfront.net/wp-content/uploads/2020/12/Ponte-Estaiada-Teresina-Piau%C3%AD-Assessoria-de-imprensa.jpeg);
+}
+#rj{
+    background-image: url(https://helipaddy.com/wp-content/uploads/2021/05/Brazil-Rio-de-Janeiro-1536x864.jpg);
+}
+#rn{
+    background-image: url(https://mediaim.expedia.com/destination/1/b4a8457eda772f2a6226429a10aad938.jpg?impolicy=fcrop&w=1490&h=490&q=high);
+    }
+#rs{
+    background-image: url(https://www.onde-e-quando.net/site/images/illustration/porto-alegre_666.jpg);
+}
+#ro{
+    background-image: url(https://1.bp.blogspot.com/-IuN4F1sWazc/T74UF9yViPI/AAAAAAAAYBQ/8yxW1kRa4tU/s1600/rondonia-porto-velho.jpg);
+}
+#rr{
+    background-image: url(https://boavista.rr.gov.br/storage/Noticias/2021/JUNHO/boa-vista-em-360-graus-encanta-primeiros-visitantes-do-mirante-do-parque-do-rio-branco.jpg);
+}
+#sc{
+    background-image: url(https://www.angajurereaparthotel.com.br/wp-content/uploads/2018/07/pontes-florianopolis-sc.jpg);
+}
+#sp{
+    background-image: url(https://www.proauto.org.br/assets/media/blog/e0fc340c4f6d003c195eed7e5c4edddf.jpg);
+    }
+#se{
+    background-image: url(https://www.brasil-turismo.com/sergipe/imagens/aracaju.jpg);
+}
+#to{
+    background-image: url(https://central3.to.gov.br/arquivo/271614_1000.jpg);
+}
