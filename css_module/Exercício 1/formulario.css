@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --bc-cor: rgb(206, 240, 234);
+    background-color: var(--bc-cor);
+    font-family: 'Quicksand', sans-serif;
+    --cor-det: rgb(230, 182, 150);
+    --cor-ltr: rgb(66, 28, 2);
+    --cor-det2:rgb(231, 201, 181);
+}
+fieldset{
+    display: block;
+    border: 1px dashed var(--cor-det);
+    width: 350px;    
+    margin: auto;
+    margin-top: 10px;
+    color: var(--cor-ltr);
+    font-weight: 750;
+    line-height: 1;
+    position: relative;
+}
+form{
+   text-align: center;
+   line-height: 2;
+}
+label{
+    display: block;
+    color: var(--cor-ltr);
+    font-weight: 550;
+    text-decoration: none;
+    line-height: 17px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    
+}
+abbr{
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    color: var(--cor-ltr);
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+small{
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    color: var(--cor-ltr);
+}
+
+input{
+    width: 200px;
+    margin-top: 1px;
+    line-height: 12px;
+    background-color: var(--bc-cor);
+    border: 0.5px dashed var(--cor-det2);
+    outline-color: var(--cor-ltr);
+    outline-width: 1px;
+    text-align: center;
+}
+input::placeholder{
+    color: var(--cor-det);
+    font-weight: 100;
+    font-size: 12px;
+    text-align: center;
+}
+input[type="submit"],[type="reset"]{
+    width: 135px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: var(--cor-ltr);
+    background-color: var(--cor-det);
+    line-height: 15px;
+    border: 0.5px solid var(--cor-ltr);
+}
