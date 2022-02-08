@@ -1,0 +1,92 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+}
+.grad{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: sans-serif;
+    border: 1px solid black;
+
+}
+#g1{
+    background: linear-gradient(to bottom, rgb(1,99,5), rgb(108,5,6));
+}
+#g2{
+    background: repeating-linear-gradient(45deg, rgb(1,61,53),rgb(173,45,16));
+}
+#g3{
+    background: linear-gradient(135deg, rgb(145,110,7),black, rgb(27,42,77));
+}
+#g4{
+    background: linear-gradient(#ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee );
+}
+#g5{
+    background: radial-gradient(at center, rgb(255,207,151), rgb(11,15,65));
+}
+#g6{
+    background: radial-gradient(50% 50% at center, rgb(178,162,198), rgb(165,145,0));
+}
+#g7{
+    background: radial-gradient(circle at 80%, green, black, yellow);
+}
+#g8{
+    background: repeating-radial-gradient(black, white 25%);
+}
+
+.img{
+    width: 100vw;
+    margin: 0px;
+    border: 1px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+}
+#i1{
+    background-image: url(https://preview.redd.it/jcks4ywwlep51.jpg?width=460&format=pjpg&auto=webp&s=7c4aef5ee426466b417aebd8a1b448bea252450c);
+    padding-top: 133%;
+}
+#i2{
+    background-image: url(https://c.tenor.com/gZ4MEdjgTGgAAAAM/anny-gifs-naiara-azevedo.gif);
+    padding-top: 104%;
+}
+#i3{
+    background-image: url(https://c.tenor.com/r-dOP61iSOkAAAAC/stuffed-big-belly.gif);
+    padding-top: 56%;
+}
+#i4{
+    background-image: url(https://c.tenor.com/8ulGS7UAgskAAAAd/louknae.gif);
+    padding-top: 108%;
+}
+#i5{
+    background-image: url(https://c.tenor.com/xLKlgjkcM1QAAAAd/louknae.gif);
+    padding-top: 100%;
+}
+#i6{
+    background-image: url(https://c.tenor.com/TkOr09bhVHEAAAAM/cat-fight.gif);
+    padding-top: 100%;
+}
+#i7{
+    background-image: url(https://c.tenor.com/eCJu3XJRMrkAAAAC/dog-chasing-tail.gif);
+    padding-top: 100%;
+}
+#i8{
+    background-image: url(https://c.tenor.com/RB4IPrrrOvUAAAAM/succession-hbo.gif);
+    padding-top: 60%;
+}
+footer{
+    text-align: center;
+    margin: 0px;
+    padding: 1em;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: antiquewhite;
+    background-color: black;
+
+}
