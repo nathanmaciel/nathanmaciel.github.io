@@ -1,0 +1,93 @@
+/*segunda imagem*/
+.amarelo{
+    margin: 10vh 3vh 3vh 3vh;
+    padding: 1.5vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 95vw;
+    height: 95vh;
+    justify-content: space-evenly;
+    border: 2px solid black;
+}
+.li1,.li2,.li3,.li4,.li5,.li6{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content: space-evenly;
+    flex-grow: 1;
+    
+}
+.r1, .r2, .r3, .r4, .r5, .r6{
+    background-color: rgb(255,215,0);
+    margin: 1vh 0vw 1vh 0vw;
+    flex-grow: 1;
+    flex-basis: 1px;
+    color:white;
+    text-align: center;
+    text-justify: distribute;
+    padding: 2vh 0vh 2vh 0vh;
+    font-size: 3em;
+    font-weight: 500;
+}
+.r2 ~ .r2, .r3 ~ .r3, .r4 ~ .r4, .r5 ~ .r5, .r6 ~ .r6  {
+    margin: 1vh 0vw 1vh 1vw;
+}
+
+
+
+/*primeira imagem*/
+.vermelho{
+    display: flex;
+    padding: 2vh;
+    margin: 3vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 95vh;
+    justify-content: space-evenly;
+    border: 2px solid black;
+}
+.l1, .l2, .l3{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 0;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-grow: 1;
+} 
+.c1, .c2, .c3{
+    margin: 3vh 1.5vw 3vh 1vw;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 10px;
+    box-sizing: border-box;
+    flex-basis: 0;
+}
+.dif{
+    margin: 3vh 1.5vw 3vh 1.25vw;
+    border: 2px solid transparent;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 5px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+}
+.duplo{
+
+    margin: 0vh 0vw 0vh 0vw;
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: 5px;
+    box-sizing: border-box;
+}
+.duplo + .duplo{
+    margin: 0vh 0vw 0vh 3vw;
+}
+
+.c1, .c2, .c3, .duplo {
+    border: 3px solid rgb(237,62,68);
+    box-shadow:-16px 16px rgb(237,62,68), -15px 15px rgb(237,62,68), -14px 14px rgb(237,62,68), -13px 13px rgb(237,62,68), -12px 12px rgb(237,62,68), -11px 11px rgb(237,62,68), -10px 10px rgb(237,62,68), -9px 9px rgb(237,62,68), -8px 8px rgb(237,62,68), -7px 7px rgb(237,62,68), -6px 6px rgb(237,62,68), -5px 5px rgb(237,62,68), -4px 4px rgb(237,62,68), -3px 3px rgb(237,62,68),
+    -2px 2px rgb(237,62,68), -1px 1px rgb(237,62,68);
+}
