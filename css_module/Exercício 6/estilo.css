@@ -10,21 +10,22 @@ h1{
     text-align: center;
     font-size: 7vh;
 }
-
 .total_cont{
     min-height: 100vh;
 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
 }
 div[class^=box]{
-    min-width: 20vw;
+    min-height: 50vh;
+    width: 280px;
     display: grid;
     grid-template-columns: 1fr 5vw;
     grid-template-areas: 'lo num';
 }
+
 .numero{
     grid-area: num;
 }
