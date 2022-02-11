@@ -12,17 +12,18 @@ h1{
 }
 .total_cont{
     min-height: 100vh;
+    margin: 10vw;
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
    
 }
 div[class^=box]{
-    min-height: 50vh;
-    width: 280px;
+    height: 70vh;
+    width: 60%;
     display: grid;
-    grid-template-columns: 1fr 5vw;
+    grid-template-columns: 3fr 1fr;
     grid-template-areas: 'lo num';
 }
 
@@ -30,16 +31,18 @@ div[class^=box]{
     grid-area: num;
 }
 h2{
-    text-align: center;
+    text-align: left;
     padding-top: 2vh;
+    padding-left: 5vh;
     font-size: 3em;
 }
 
 div[class^=layout]{
-    min-width: 5vw;
-    height: 30vh;
+    min-width: 40vw;
+    height: 80%;
     grid-area: lo;
     border: 1px solid gray;
+    
     
     display: grid;
 }
