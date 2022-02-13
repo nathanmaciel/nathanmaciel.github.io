@@ -127,13 +127,13 @@ div[id$=txt]{
 }
 #c1btn{
     background-color: rgb(255,89,51);
-    text-decoration: none;
     width: 3vw;
     height: 3vw;
     border-radius: 5px;
     color: white;
-    text-align: center;
-    justify-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
