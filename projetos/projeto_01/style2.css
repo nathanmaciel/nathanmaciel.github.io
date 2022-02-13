@@ -84,7 +84,7 @@ div[id$=txt]{
 }
 #c1img{
     height: 15vw;
-    background-image: url(../SRC/imgBox-1.svg);
+    background-image: url(imgBox-1.svg);
     image-rendering: optimizeQuality;
     background-repeat: no-repeat;
     background-size: cover;
