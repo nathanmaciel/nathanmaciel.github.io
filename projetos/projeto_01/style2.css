@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind', sans-serif;
+    box-sizing: border-box;
+
+    display: grid;
+
+    grid-template-rows: 3fr 3fr 1fr;
+    grid-template-areas: 'header' 'main' 'footer';
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+main{
+    grid-area: main;
+    padding: 0vw 0 3vw 0;
+    height: 56.86vw;
+    background-color: rgb(245,245,245);
+
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 'format' 'caixas';
+}
+.m2box1{
+    grid-area: format;
+
+    text-align: center;
+}
+.m2box1 h2{
+    font-size: 4vw;
+    font-weight: 600;
+    line-height: 4vw;
+    letter-spacing: 1px;
+    padding-top: 4vw;
+    margin: 0;
+}
+.m2box1 p{
+    font-size: 2vw;
+    line-height: 3vw;
+    font-weight: 500;
+    margin: 0;
+    padding: 0vw 25vw 1vw 25vw;
+    text-indent: 0;
+}
+.m2box2{
+    grid-area: caixas;
+
+    display: flex;
+
+    justify-content: center;
+    padding: 2vh 3vw 2vh 3vw;
+}
+div[id^="card"]{
+    width: 25vw;
+    height: 38vw;
+    box-shadow: 2px 1px 3px rgb(196,196,196), -2px 1px 3px rgb(196,196,196);
+
+    display: grid;
+    grid-template-rows: 3.9fr 6.1fr;
+    grid-template-areas: 'img' 'txt';
+}
+#card2, #card3{
+    margin-left: 3.25vw;
+}
+div[id$=img]{
+    grid-area: img;
+    box-sizing: border-box;
+}
+div[id$=txt]{
+    grid-area: txt;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: 'top' 'bttm';
+
+    box-shadow: 0px 5px 7px rgb(142,144,149), 0 0 2px rgb(196,196,196);
+    background-color: rgb(196,196,196);
+}
+#c1img{
+    height: 15vw;
+    background-image: url(../SRC/imgBox-1.svg);
+    image-rendering: optimizeQuality;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#c1txt{
+    padding: 0vw;
+}
+#c1top{
+    grid-area: top;
+}
+#c1txt h3{
+    font-size: 2.5vw;
+    color: rgb(255,89,51);
+    padding: 2vw 0 0 2vw;
+    margin: 0;
+}
+#c1txt p, ul{
+    font-size: 1.5vw;
+    padding: 0 0 1vw 2vw;
+    margin: 0;
+    line-height: 2vw;
+    font-weight: 600;
+}
+#c1txt ul{
+    list-style-type: none;
+    font-weight: 400;
+    padding-bottom: 0;
+}
+#c1bttm{
+    grid-area: bttm;
+    padding: 0vw 1vw 0vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#c1tel{
+    font-size: 1.8vw;
+    font-weight: 700;
+}
+#c1btn{
+    background-color: rgb(255,89,51);
+    text-decoration: none;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    justify-items: center;
+}
+
+
+
+

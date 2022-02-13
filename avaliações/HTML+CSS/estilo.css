@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 10vh 10vw 10vh 10vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: rgb(219, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.caixa_principal{
+    border: 1px solid black;    
+
+    display: grid;
+
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-areas: 'jo' 'si' 'wh';
+}
+.join{
+    grid-area: jo;
+
+    border: 1px solid black;
+    background-color: beige;
+
+    padding: 5vw;
+}
+.signup{
+    grid-area: si;
+
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
+
+    grid-template-areas: 's1 s1' 's2 s3' 's4 s4' 's5 s5';
+}
+p[id^="s"]{
+    border: 1px solid black;
+    margin: 0;
+    padding: 0vw 5vw 0vw 5vw;
+}
+#s1{
+    grid-area: s1;
+
+    border: 1px solid black;
+    margin: 0;
+    padding-left: 5vw;
+}
+#s2{
+    grid-area: s2;
+}
+#s3{
+    grid-area: s3;
+}
+#s4{
+    grid-area: s4;
+}
+#s5{
+    grid-area: s5;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5vw;
+}
+a{
+    border: 1px solid black;
+    height: 100%;
+    flex-grow: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whyus{
+    grid-area: wh;
+
+    border: 1px solid black;
+}
+#w1{
+    padding-left: 5vw;
+}
+#w2{
+    list-style-type: none;
+    padding-left: 5vw;
+}
+
