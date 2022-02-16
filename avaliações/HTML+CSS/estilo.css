@@ -91,6 +91,7 @@ body{
             display: flex;
             align-items: center;
             justify-content: left;
+            padding-left: 0.5em;
 
             font-weight: 400;
             color: rgba(132, 233, 231, 0.548);
