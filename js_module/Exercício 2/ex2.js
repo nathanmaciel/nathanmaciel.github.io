@@ -4,11 +4,11 @@ let txtUp = txt.toUpperCase();
 
 let txtLo = txt.toLowerCase();
 
-document.write(`<p>Seu texto: ${txt}</p>`);
+document.write(`<p><strong>Seu texto:</strong> ${txt}</p>`);
 
-document.write(`<p>Seu texto em caixa alta: ${txtUp}</p>`);
+document.write(`<p><strong>Seu texto em caixa alta:</strong> ${txtUp}</p>`);
 
-document.write(`<p>Seu texto em minusculas: ${txtLo}</p>`);
+document.write(`<p><strong>Seu texto em minusculas:</strong> ${txtLo}</p>`);
 
 
 let letras = txt.split("");
