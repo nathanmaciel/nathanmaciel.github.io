@@ -18,19 +18,20 @@ var usuarios = new Array();
 
 for (let i = 0; i < qtde; i++){
     let nome = prompt(`Qual o nome do ${i+1}º usuário?`);
-    let idade = parseInt(prompt(`Qual a idade ${i+1}º usuário?`));
-    let sexo = prompt(`Qual é o sexo do ${i+1}º usuário? Para masculino insira \"m\"; feminino, \"f\"; e outro, \"o\"`);
-    let casado = prompt(`O ${i+1}º usuário é casado? Se sim, digite \"s\"; se não, \"n\"`);
 
-    if (casado == "s"){
-        casado = true;
-    }
-    if (casado == "n"){
-        casado = false;
-    }
+    let idade = parseInt(prompt(`Qual a idade ${i+1}º usuário?`));
+    
+    let sexo = prompt(`Qual é o sexo do ${i+1}º usuário? Para masculino insira \"m\"; feminino, \"f\"; e outro, \"o\"`);
+
+    let casado = prompt(`O ${i+1}º usuário é casado? Se sim, digite \"s\"; se não, \"n\"`);
+        if (casado == "s"){
+            casado = true;
+        }
+        if (casado == "n"){
+            casado = false;
+        }
 
     usuarios[i] = new usuario(nome, idade, sexo, casado);
-
     console.log((usuarios[i]))
 }
 
