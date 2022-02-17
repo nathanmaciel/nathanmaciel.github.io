@@ -20,7 +20,8 @@ var dec = 0; //inicializando o número na base 10
 var dig = bin.length; //guardando o tamanho do número binário
 
 for (let i = (dig - 1); i >=0; i--){
-    dec += bin[i] * 2 ** (dig - 1 - i)
+    mult = parseInt(bin[i]);
+    dec += mult * 2 ** (dig - 1 - i);
 }
 
 alert(`O número:\n${bin}\nrepresentado em binário equivale ao seguinte número em decimais:\n${dec}`)
