@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(202, 175, 141);
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    background-color: coral;
+    height: 5em;
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    background-color: black;
+    height: 50%;
+    width: 50%;
+
+    text-decoration: none;
+    color: blue;
+
+    transition-property: all;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+    transition-duration: 5s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.txt{
+    color: antiquewhite;
+}
+.link:hover{
+    background-color: blue;
+    transform: scale(1.5);
+}
+
+
+
