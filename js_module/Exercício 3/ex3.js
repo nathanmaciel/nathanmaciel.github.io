@@ -42,7 +42,7 @@ for (let i in usuarios){
 
     document.write(`<p>Nome: ${(usuarios[i]).nome}</p>`);
 
-    document.write(`<p>Idade: ${(usuarios[i]).idade}</p>`);
+    document.write(`<p>Idade: ${(usuarios[i]).idade} anos</p>`);
 
     if (usuarios[i].sexo == "m"){
         document.write(`<p>Sexo: Masculino</p>`);
