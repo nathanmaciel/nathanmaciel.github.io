@@ -1,5 +1,5 @@
 
-do{
+do{ //fazendo com que o usuário insira um valor válido
     var qtde = parseInt(prompt('Quantos números você quer digitar?'));
     if (Number.isNaN(qtde) ||  qtde < 0){
         alert('A quantidade de números precisa ser um inteiro positivo ;)')
@@ -9,8 +9,9 @@ do{
 
 var num = new Array();
 
+//reiterando para pegar todos os números
 for (let i = 0; i < qtde; i++){
-    do{
+    do{ //claro, sempre conferindo se o número inserido é válido
         num[i] = parseFloat(prompt(`Digite o ${i+1}º número`));
         if (Number.isNaN(num[i])){
             alert('Você precisa digirar um número ;) \nE lembre-se de usar ponto e não vírgula para representar números decimais!')

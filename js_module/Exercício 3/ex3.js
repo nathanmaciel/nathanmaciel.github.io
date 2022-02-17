@@ -1,11 +1,11 @@
-function usuario(nome, idade, sexo, casado){
+function usuario(nome, idade, sexo, casado){ //iniciando a função para definir o objeto
     this.nome = nome;
     this.idade = idade;
     this.sexo = sexo;
     this.casado = casado;
 }
 
-do{
+do{ //pegando o número de usuários e verificando se ele é válido
     var qtde = parseInt(prompt('Quantos usuários deverão ser salvos?'))
 
     if (Number.isNaN(qtde) || (qtde < 0))
@@ -16,7 +16,7 @@ do{
 
 var usuarios = new Array();
 
-for (let i = 0; i < qtde; i++){
+for (let i = 0; i < qtde; i++){ //pegando os dados para cada usuário, nesta etapa, resolvi confiar que o usuário inserirá valores válidos
     let nome = prompt(`Qual o nome do ${i+1}º usuário?`);
 
     let idade = parseInt(prompt(`Qual a idade ${i+1}º usuário?`));
