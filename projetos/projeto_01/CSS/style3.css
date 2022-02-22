@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+
+main {
+    display: grid;
+    width: 5fr;
+    height: 600px;  /* esse ajuste pode ser usado nos outros mains */
+    margin: 0;
+    grid-template-rows: 5fr;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 'map contact';
+}
+  
+.map {  
+    grid-area: map;
+    display: flex;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.contact{
+    text-align: center;
+    grid-area: contact;
+    display: flex; 
+    margin: 0;
+    flex-direction: column;
+    padding: 1vw 0vw 0vw 0vw;
+}
+.b-contact{
+    padding: 0vw 2vw 0vw 2vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    margin-top: 0
+    
+}
+#contato-h2{
+    word-wrap: break-word;
+    font-size: 35px;
+}
+.b-name{
+    padding: 0vw 0vw 0vw 0vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    margin-top: 0;
+}
+#name{
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    margin: 0 ;
+    width: 85%;
+    height: 55%;
+    margin-top: 30px;
+    border-radius: 16px;
+    border: 2px solid gray;
+}
+.b-textbox{
+    padding: 0vw 0vw 0vw 0vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    margin-top: 8%;
+}
+#textbox{
+    display: flex;
+    margin: 0;
+    width: 85%;
+    height: 145%;
+    border-radius: 16px;
+    border: 2px solid gray;
+    margin-top: 30px;
+}
+.b-box{
+	padding: 0vw 0vw 0vw 0vw;
+	display: flex;
+    margin-top: 5%;
+	align-items: center;
+	justify-content: center;
+    
+}
+.button{
+    width: 55%;
+    height: 60%;
+    margin-top: 45px;
+    background-color: coral;
+    font-size: x-large;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+
+@media(min-width: 710px) and (max-width:1000px){
+    main {grid-template-rows: 5fr;
+        grid-template-columns: 2fr 2fr;
+        display: grid;
+        width: 5fr;
+        height: 500px;  /* esse ajuste pode ser usado nos outros mains */
+    }
+    .map {  
+        padding: 0vw 0vw 0vw 0vw;
+    }
+    .contact{
+        text-align: center;
+        grid-area: contact;
+        display: flex; 
+        margin: 0;
+        flex-direction: column;
+        padding: 5vw 0vw 0vw 0vw;
+    }
+    #contato-h2{
+        word-wrap: break-word;
+        font-size: 25px;
+    }
+    #name{
+        width: 85%;
+        height: 65%;
+        margin-top: 20px;
+    }
+    #textbox{
+        margin-top: 20px;
+        width: 85%;
+        height: 120%;
+    }
+    .button{
+        width: 55%;
+        height: 60%;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 710px){
+    main{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .map{
+        height: 350px;
+    }
+    #contato-h2{
+        font-size: 22px;
+    } 
+    .b-contact{
+        
+        padding: 0vw 0vw 0vw 0vw;
+    }
+
+    .contact{
+        height: 100%;
+        font-size: large;
+        margin-top: 20px;
+        padding-top: 0;
+    }
+    #name{
+        height: 40%;
+        width: 60%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }      
+    .b-name{
+        height: 85px;
+    }
+    #textbox{
+        width: 60%;
+        height: 100%;
+        margin-top: 0px;
+    }
+    .b-textbox{
+        margin-top: 0;
+    }
+    .button{
+        margin-top: 8px;
+        padding-bottom: 10px;
+   }
+   .b-box{
+       margin-top: 0;
+   }
+        
+    
+}
+

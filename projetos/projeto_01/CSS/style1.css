@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+
+    main {
+        display: flex;
+        width: 100%;
+        flex-basis: auto;  
+        margin: 0;
+        height: min-content;
+        
+    } 
+
+    .item-2 {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box; 
+        width: 100%;
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        font-size: 1.3em;
+        line-height: 1.2em;
+        padding: 0 40px 0 40px;
+        font-family: 'Hind', sans-serif;
+    }
+
+    h1 {
+        font-size: 2em;
+        align-self: flex-start;
+        
+    }
+
+    .item-1 { 
+        width: 100%;   
+    }
+
+    .item-1 img {
+        height: 30vw;
+        width: 50vw;
+    }
+
+@media(max-width: 700px){
+    main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'div1'
+            'div2'        
+        ;
+    } 
+
+    .item-2 {
+        text-align: justify;
+        color: black;
+        font-size: 0.8em;
+        font-family: 'Hind', sans-serif;
+        padding: 30px;
+        width: 100vw;
+        grid-area: div1;
+        height: max-content;
+    }
+    #img_sobre{
+        width: 100vw;
+        height: 77vw;
+    }
+    
+    .item-1 {
+        width: 100vw;
+        grid-area: div2;
+
+    }
+
+    h1 {font-size: 2em;}
+}
+
+@media (min-width:700px) and (max-width:1000px){
+    .item-2 {
+        display: flex;
+        flex-direction: column;
+        box-sizing: content-box; 
+        width: 100%;
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        font-size: 1.0em;
+        line-height: 1.0em;
+        padding-top: 1em;
+        height: 30vw;
+        margin: 0px;
+        font-family: 'Hind', sans-serif;
+
+}
+}

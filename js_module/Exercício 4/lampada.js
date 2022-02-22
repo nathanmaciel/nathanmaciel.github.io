@@ -25,8 +25,5 @@ btn.addEventListener('click', () => {
         btn.style.color = 'white';
         
     }
-
-    console.log(body.classList)
-
 })
 
