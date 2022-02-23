@@ -4,8 +4,6 @@ const tarefas = document.getElementsByClassName('tarefas')[0]
 const excluir = document.getElementsByClassName('excluir')
 const box = document.getElementsByClassName('box')
 
-console.log(adder)
-
 btn_add.addEventListener('click', () => {
     var nv_tarefa = adder.value;
 
@@ -28,13 +26,8 @@ btn_add.addEventListener('click', () => {
         excluir.classList.add('excluir')
 
         adder.value = ''
-
     }
 })
-
-console.log(box)
-console.log(excluir)
-
 
 document.addEventListener('click', (event) => {
     for (let i = 0; i < Array.from(box).length; i++){
