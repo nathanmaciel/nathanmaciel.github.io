@@ -4,27 +4,63 @@ const tarefas = document.getElementsByClassName('tarefas')[0]
 const excluir = document.getElementsByClassName('excluir')
 const box = document.getElementsByClassName('box')
 
+var store = new Array();
+var aux = localStorage.getItem('tarefa1')
+var aux2 = 0
+
+while (aux != null){
+    store[aux2] = aux;
+    aux2++;
+    aux = localStorage.getItem(`tarefa${aux2+1}`)
+}
+
+console.log(store)
+
+for (let i = 0; i < store.length; i++){
+    var nbox = document.createElement('div')
+    var added = document.createElement('p')
+    var nexcluir = document.createElement('button')
+
+    added.innerText = store[i];
+    nexcluir.innerText = 'Excluir';
+
+    nbox.appendChild(added);
+    nbox.appendChild(nexcluir);
+    tarefas.appendChild(nbox);
+
+    nbox.classList.add('box')
+    added.classList.add('added')
+    nexcluir.classList.add('excluir')
+}
+
+aux2 = 1;
+
 btn_add.addEventListener('click', () => {
     var nv_tarefa = adder.value;
 
     if (nv_tarefa.length == 0){
         alert('Você precisa dar um nome a uma nova tarefa')
     } else {
-        var box = document.createElement('div')
+        var nbox = document.createElement('div')
         var added = document.createElement('p')
-        var excluir = document.createElement('button')
+        var nexcluir = document.createElement('button')
 
         added.innerText = nv_tarefa;
-        excluir.innerText = 'Excluir';
+        nexcluir.innerText = 'Excluir';
 
-        box.appendChild(added);
-        box.appendChild(excluir);
-        tarefas.appendChild(box);
+        nbox.appendChild(added);
+        nbox.appendChild(nexcluir);
+        tarefas.appendChild(nbox);
         
-        box.classList.add('box')
+        nbox.classList.add('box')
         added.classList.add('added')
-        excluir.classList.add('excluir')
+        nexcluir.classList.add('excluir')
 
+
+
+        localStorage.setItem(`tarefa${aux2}`, nv_tarefa)
+        
+        aux2++;
         adder.value = ''
     }
 })
@@ -33,6 +69,11 @@ document.addEventListener('click', (event) => {
     for (let i = 0; i < Array.from(box).length; i++){
     if (event.target == excluir[i]){
         tarefas.removeChild(box[i])
+        for(let j = i+1; Array.from(box); i++){
+            localStorage.removeItem(`tarefa${j}`)
+            localStorage.setItem(`tarefa${j}`, localStorage.getItem(`tarefa${j+1}`))
+        }
+        localStorage.removeItem(`tarefa${Array.from(box).length}`)
     }
 }})
 
